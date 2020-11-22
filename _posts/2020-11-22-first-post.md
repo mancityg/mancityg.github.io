@@ -1,22 +1,35 @@
 ---
-title: "Welcome to Jekyll!"
-date: 2017-10-20 08:26:28 -0400
+title: "Quiz02 - post1"
+date: 2020-11-22 08:26:28 -0400
 categories: jekyll update
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+1. 프로젝트 선정 과정
+- 2020.11.08 -
+팀원들 모두 1개 이상의 프로젝트 제안 
+개인이 선정한 프로젝트 발표
+투표를 통한 2개의 최종 프로젝트 후보 선정
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+- 2020.11.11 -
+최종 프로젝트 선정
 
-Jekyll also offers powerful support for code snippets:
+2. 프로젝트 소개
+  a. 프로젝트 소개
+    프로젝트 이름 그대로 성균관대학교 아이캠퍼스(icampus.skku.edu)에서 강의를 다운 받아주는 프로그램이다.
+    
+    아이캠퍼스 사이트에서 강의를 수강할 때 자유로운 spanning이 어렵고 시험기간과 같은 중요한 시기에 서버가 터지는 등 강의를 수강하는데 불편함이 많아 기존에도 수동으로 직접 다운 받거나 강의 별로 chrome extension을 사용하여 다운 받는 방법들이 많이 사용되엇다. 그러나 이러한 방법들은 매 강의마다 사용자가 직접 강의를 재생하고 다운받아야 하며 다운받은 파일을 따로 정리 및 관리 해야하는 것이 매우 번거롭다.
+    
+    해당 프로젝트는 이러한 불편점들을 해결하기 위해 해당 사용자가 수강하는 강좌들을 전부 자동으로 다운받고 강좌별 주차별로 다운받은 파일을 관리해주며 매주 업데이트 되는 강좌들을 자동으로 다운 받아주는 All-in-one 솔루션을 제공한다.
+  b. 프로젝트 현재 진행 상태
+    해당 프로젝트는 현재 browser automation 라이브러리인 selenium과 이를 proxy server와 연결하여 사용할 수 있는 라이브러리인 selenium-wire을 사용하여 구현되었으며 정상적으로 작동은 하나 현재 가장 기본적인 기능만 제공하며 작동한다. 또한 아직 사용자 계정에 대한 일반화가 되지 않아 수강하는 강좌의 class id를 직접 설정하여야 하고 UI를 제공하지 않는 등 일반적인 사용자가 사용하기 쉽지 않은 상태이다.
 
-​```python
-def print_hi(name):
-  print("hello", name)
-print_hi('Tom')
-​```
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+3. 개선사항
+  a. 문서화1 : 문서화가 제대로 되어 있지 않아서 해당 프로그램이 제공하는 기능에 대한 자세한 설명과 작동 방법 작성
+  b. 기능 개선1 : 어떤 교과목 강의만 다운 받을지, 몇주차 강의만 다운 받을지, 다운받을 파일명의 format은 어떻게 할지 등 다양한 다운로드 옵션 추가
+  c. UI 개선 : CLI 및 GUI를 추가하여 user-friendly 한 UX 제공
+  d. 코드 개선2 : 현재는 사용자 계정에 맞게 여러 설정을 하여야 사용이 가능하지만 팀프로젝트를 진행하면서 여러 사용자의 계정에 테스트하여 별도의 설정 없이 로그인 만으로 작동하도록 일반화 시도
+  e. 코드 개선3 : 기존에는 selenium과 proxy를 사용하여 traffic capture를 사용하여 작동하지만 Session sharing을 통한 direct request를 통해 browser automation에 대한 의존도를 감소시키고 작동 속도 개선
+  f. 코드 개선4 : 기타 코드 개선 및 모듈화
+  g. 기능 추가1 : 다운 받을 위치를 onedrive나 google drive 같은 cloud 서비스를 사용할 수 있도록 기능 추가
+  h. 코드 개선5 : Multiprocessing을 도입하여 다운로드 속도 개선
+  i. 기능 추가2 : 자동으로 다운 받은 강의에 대한 볼륨 평탄화/평준화/일반화(어떤 강의는 볼륨 작고 어떤 강의는 볼륨 크고 하니까 일정하게 바꾸는거 이거 라이브러리 있어서 뚝딱 가능)
+  j. 문서화2 : 저작권에 대한 안내 및 사용 시 주의사항에 대한 확고한 공지 추가
