@@ -17,13 +17,13 @@ remote_theme : mmistakes/minimal-mistakes
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Site Title"
+title                    : "Quiz (2)를 대신하는 수행 과제 (11주차)"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
-description              : "An amazing website."
-url                      : # the base hostname & protocol for your site e.g. "https://mancityg.github.io"
-baseurl                  : # the subpath of your site, e.g. ""
+name                     : "LEESANGHO"
+description              : "2017310026 이상호의 개인 페이지입니다."
+url                      : "https://mancityg.github.io" # the base hostname & protocol for your site e.g. 
+baseurl                  : "" # the subpath of your site, e.g.
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
