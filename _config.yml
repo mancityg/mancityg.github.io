@@ -95,11 +95,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "이상호"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  bio              : "2017310026 이상호 개인 정적페이지 입니다."
+  location         : "수원시 장안구 천천동 268-14 102호"
+  email            : "lsh3982@naver.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
