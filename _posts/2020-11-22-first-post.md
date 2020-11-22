@@ -1,7 +1,7 @@
 ---
 title: "Quiz02 - post1"
 date: 2020-11-22 08:26:28 -0400
-categories: jekyll update
+categories: OSS SKKU 이상호 2017310026
 ---
 
 1. 프로젝트 선정 과정
